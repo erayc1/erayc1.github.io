@@ -1,0 +1,56 @@
+:root{
+  --cream:#FFF5E1;
+  --cream-2:#FBE9C6;
+  --ink:#2E2A24;
+  --muted:#6B6257;
+  --teal:#13A8A0;
+  --teal-dark:#0C7F79;
+  --card:#FFFDF7;
+  --line:#EBDCBC;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--cream);color:var(--ink);
+  font-family:"Baloo 2",system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:18px;line-height:1.55;
+}
+a{color:var(--teal-dark)}
+.wrap{max-width:760px;margin:0 auto;padding:32px 16px 48px}
+.hero{text-align:center;padding:24px 0 8px}
+.logo{
+  display:inline-grid;place-items:center;width:88px;height:88px;border-radius:26px;
+  background:var(--teal);color:#fff;font-size:44px;font-weight:800;
+  box-shadow:0 6px 0 var(--teal-dark);
+}
+h1{font-size:clamp(40px,10vw,64px);line-height:1.05;margin:20px 0 4px;font-weight:800;color:var(--teal-dark)}
+.tag{color:var(--muted);margin:0;font-size:20px}
+.card{
+  background:var(--card);border:2px solid var(--line);border-radius:22px;
+  padding:20px 22px;margin:20px 0;
+}
+.card h2{margin:0 0 6px;font-size:24px;line-height:1.2}
+.card p{margin:0 0 8px}
+.lang{
+  display:inline-block;font-size:13px;font-weight:700;letter-spacing:.06em;
+  background:var(--cream-2);color:var(--teal-dark);border-radius:999px;padding:2px 10px;margin-bottom:8px;
+}
+.stores{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin:24px 0 8px}
+.store{
+  flex:1 1 220px;max-width:280px;display:block;text-align:center;text-decoration:none;
+  background:var(--teal);color:#fff;font-weight:700;font-size:18px;
+  border-radius:16px;padding:12px 16px;box-shadow:0 4px 0 var(--teal-dark);
+}
+.store small{display:block;font-weight:500;font-size:14px;opacity:.9}
+.store[aria-disabled="true"]{background:#B9C9C4;box-shadow:0 4px 0 #94A6A0;cursor:default}
+.links{text-align:center;margin-top:28px}
+.links a{font-weight:700}
+footer{text-align:center;color:var(--muted);font-size:15px;margin-top:36px}
+.policy h1{font-size:clamp(30px,7vw,42px);text-align:left}
+.policy h2{font-size:22px;margin:22px 0 4px}
+.policy p{margin:0 0 10px}
+.policy .date{color:var(--muted);margin-top:0}
+.back{display:inline-block;margin-bottom:8px;font-weight:700;text-decoration:none}
+.toc{display:flex;gap:12px;flex-wrap:wrap;margin:8px 0 0}
+hr{border:0;border-top:2px dashed var(--line);margin:40px 0}
+a{overflow-wrap:anywhere}
